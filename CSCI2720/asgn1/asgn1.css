@@ -1,0 +1,122 @@
+div, ul, li { 
+	outline: black 1px dashed;
+}
+
+@media screen and (max-width: 800px) {
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+li li{
+	display: none;
+}
+
+#header {
+	background: #aaf;
+	height: 100px;
+}
+
+#menu {
+	background: #ddd;
+}
+
+#content1 {
+	background: #faa;
+}
+
+#content2 {
+        background: #ffa;
+}
+
+#area1 {
+	background: red;
+}
+
+#area2 {
+	background: green;
+}
+
+#area3 {
+	background: blue;
+}
+
+}
+
+@media screen and (min-width:800px) {
+
+#header {
+	background: #aaf;
+	width: 1200px;
+	height: 100px;
+	margin: 0;
+}
+
+#menu {
+	float: left;
+	width: 150px;
+	height: 500px;
+	background: #ddd;
+}
+
+li {
+	margin-left: -40px;
+}
+
+li li {
+	list-style: none;
+}
+
+ul ul {
+	background: #eee;
+	float: right;
+}
+
+#content {
+	float: left;
+	width: 1050px;
+	display: flex;
+}
+
+#content1 {
+	flex: 1;
+	width: 50%;
+	height: 500px;
+	background: #faa;
+}
+
+#content2 {
+	flex: 1;
+	width: 50%;
+        background: #ffa;
+	display: flex;
+}
+
+#area1 {
+	flex: 1;
+	width: 33.33%;
+	height: 150px;
+	background: red;
+}
+
+#area2 {
+	flex: 1;
+	width: 33.33%;
+	height: 150px;
+	background: green;
+}
+
+#area3 {
+	flex: 1;
+	width: 33.33%;
+	height: 150px;
+	background: blue;
+}
+
+}
