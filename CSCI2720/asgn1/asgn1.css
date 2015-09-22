@@ -19,32 +19,32 @@ li li{
 }
 
 #header {
-	background: #aaf;
+	background-color: #aaf;
 	height: 100px;
 }
 
 #menu {
-	background: #ddd;
+	background-color: #ddd;
 }
 
 #content1 {
-	background: #faa;
+	background-color: #faa;
 }
 
 #content2 {
-        background: #ffa;
+        background-color: #ffa;
 }
 
 #area1 {
-	background: red;
+	background-color: red;
 }
 
 #area2 {
-	background: green;
+	background-color: green;
 }
 
 #area3 {
-	background: blue;
+	background-color: blue;
 }
 
 }
@@ -52,35 +52,36 @@ li li{
 @media screen and (min-width:800px) {
 
 #header {
-	background: #aaf;
-	width: 1200px;
+	background-color: #aaf;
+	width: screen.width;
 	height: 100px;
-	margin: 0;
 }
 
 #menu {
 	float: left;
 	width: 150px;
 	height: 500px;
-	background: #ddd;
+	background-color: #ddd;
 }
 
 li {
+	list-style: none;
 	margin-left: -40px;
 }
 
-li li {
-	list-style: none;
+ul {
+	margin-top: 0px;
+	float: left;
 }
 
 ul ul {
-	background: #eee;
+	background-color: #eee;
 	float: right;
 }
 
 #content {
 	float: left;
-	width: 1050px;
+	width: calc(100% - 150px);
 	display: flex;
 }
 
@@ -88,13 +89,13 @@ ul ul {
 	flex: 1;
 	width: 50%;
 	height: 500px;
-	background: #faa;
+	background-color: #faa;
 }
 
 #content2 {
 	flex: 1;
 	width: 50%;
-        background: #ffa;
+        background-color: #ffa;
 	display: flex;
 }
 
@@ -102,21 +103,21 @@ ul ul {
 	flex: 1;
 	width: 33.33%;
 	height: 150px;
-	background: red;
+	background-color: red;
 }
 
 #area2 {
 	flex: 1;
 	width: 33.33%;
 	height: 150px;
-	background: green;
+	background-color: green;
 }
 
 #area3 {
 	flex: 1;
 	width: 33.33%;
 	height: 150px;
-	background: blue;
+	background-color: blue;
 }
 
 }
